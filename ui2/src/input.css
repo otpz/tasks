@@ -17,7 +17,8 @@
 @layer components{
 
     .card{
-        @apply h-76 w-full p-5 flex flex-col bg-form-dark border-r-0.5 border-border-gray;
+        @apply h-76 w-full p-5 flex flex-col bg-form-dark border-r-0.5 border-border-gray transition-all duration-300 ease-in-out;
+
     }
     .card-inner{
         @apply text-white flex flex-col;
@@ -26,29 +27,29 @@
         @apply text-xl font-semibold;
     }
     .card-description{
-        @apply mt-2 text-xxs;
+        @apply mt-2 text-xs;
     }
     .card-price{
         @apply mt-4 text-4xl font-semibold;
     }
     .card-footer{
-        @apply mt-2 text-xxs text-gray-400;
+        @apply mt-2 text-xs text-gray-400;
     }
     .card-divider{
         @apply mt-5 h-0.5 dark:opacity-50
     }
     .card-popular{
-        @apply text-xxs text-white p-2 py-1 bg-popular rounded-full;
+        @apply text-xs text-white p-2 py-1 bg-popular rounded-full;
     }
 
-    .card.active{
-        @apply py-11.75 h-full rounded-3xl border-none border-border-gray bg-white
+    .card:hover{
+        @apply py-11.75 h-full rounded-3xl border-none border-border-gray bg-white transition-all duration-300 ease-in-out;
     }
-    .card.active .card-title, .card.active .card-description, .card.active .card-price{
-        @apply text-black font-bold
+    .card:hover .card-title, .card:hover .card-description, .card:hover .card-price{
+        @apply text-black font-bold transition-all duration-300 ease-in-out;
     }
-    .card.active .card-divider{
-        @apply bg-neutral-400 dark:opacity-50
+    .card:hover .card-divider{
+        @apply bg-neutral-400 dark:opacity-50 transition-all duration-300 ease-in-out;
     }
 
 }

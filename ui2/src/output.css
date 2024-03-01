@@ -558,6 +558,9 @@ html{
   --tw-bg-opacity: 1;
   background-color: rgb(47 47 47 / var(--tw-bg-opacity));
   padding: 1.25rem;
+  transition-property: all;
+  transition-duration: 300ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .card-inner {
@@ -575,7 +578,8 @@ html{
 
 .card-description {
   margin-top: 0.5rem;
-  font-size: .625rem;
+  font-size: 0.75rem;
+  line-height: 1rem;
 }
 
 .card-price {
@@ -587,7 +591,8 @@ html{
 
 .card-footer {
   margin-top: 0.5rem;
-  font-size: .625rem;
+  font-size: 0.75rem;
+  line-height: 1rem;
   --tw-text-opacity: 1;
   color: rgb(156 163 175 / var(--tw-text-opacity));
 }
@@ -610,12 +615,13 @@ html{
   padding: 0.5rem;
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
-  font-size: .625rem;
+  font-size: 0.75rem;
+  line-height: 1rem;
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.card.active {
+.card:hover {
   height: 100%;
   border-radius: 1.5rem;
   border-style: none;
@@ -624,21 +630,30 @@ html{
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
   padding-top: 2.9375rem;
   padding-bottom: 2.9375rem;
+  transition-property: all;
+  transition-duration: 300ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.card.active .card-title, .card.active .card-description, .card.active .card-price {
+.card:hover .card-title, .card:hover .card-description, .card:hover .card-price {
   font-weight: 700;
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
+  transition-property: all;
+  transition-duration: 300ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.card.active .card-divider {
+.card:hover .card-divider {
   --tw-bg-opacity: 1;
   background-color: rgb(163 163 163 / var(--tw-bg-opacity));
+  transition-property: all;
+  transition-duration: 300ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 @media (prefers-color-scheme: dark) {
-  .card.active .card-divider {
+  .card:hover .card-divider {
     opacity: 0.5;
   }
 }
@@ -651,8 +666,8 @@ html{
   margin-top: 3.5rem;
 }
 
-.mt-3 {
-  margin-top: 0.75rem;
+.mt-2 {
+  margin-top: 0.5rem;
 }
 
 .mt-4 {
@@ -687,12 +702,12 @@ html{
   height: 14px;
 }
 
-.min-h-32 {
-  min-height: 8rem;
-}
-
 .w-1\/2 {
   width: 50%;
+}
+
+.w-1\/3 {
+  width: 33.333333%;
 }
 
 .w-8 {
@@ -709,10 +724,6 @@ html{
 
 .min-w-42 {
   min-width: 168px;
-}
-
-.max-w-60 {
-  max-width: 15rem;
 }
 
 .grid-cols-3 {
@@ -765,10 +776,6 @@ html{
   border-bottom-right-radius: 1.5rem;
 }
 
-.border-2 {
-  border-width: 2px;
-}
-
 .border-none {
   border-style: none;
 }
@@ -802,8 +809,8 @@ html{
   --tw-gradient-to: #205cda var(--tw-gradient-to-position);
 }
 
-.p-5 {
-  padding: 1.25rem;
+.p-4 {
+  padding: 1rem;
 }
 
 .p-8 {
@@ -840,8 +847,9 @@ html{
   line-height: 1.75rem;
 }
 
-.text-xxs {
-  font-size: .625rem;
+.text-xs {
+  font-size: 0.75rem;
+  line-height: 1rem;
 }
 
 .font-normal {
@@ -881,10 +889,12 @@ html{
   box-sizing: border-box;
 }
 
-.placeholder\:text-xxs::-moz-placeholder {
-  font-size: .625rem;
+.placeholder\:text-xs::-moz-placeholder {
+  font-size: 0.75rem;
+  line-height: 1rem;
 }
 
-.placeholder\:text-xxs::placeholder {
-  font-size: .625rem;
+.placeholder\:text-xs::placeholder {
+  font-size: 0.75rem;
+  line-height: 1rem;
 }
