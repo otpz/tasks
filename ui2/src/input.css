@@ -17,39 +17,44 @@
 @layer components{
 
     .card{
-        @apply h-76 w-full p-5 flex flex-col bg-form-dark border-r-0.5 border-border-gray transition-all duration-300 ease-in-out;
-
+        @apply h-76 w-full p-5 flex flex-col bg-form-dark border-r-0.5 border-border-gray transition-all duration-300 ease-in-out sm:p-3 xs:col-span-3 xs:h-32 xs:border-indigo-500 xs:border-r-0;
     }
     .card-inner{
         @apply text-white flex flex-col;
     }
     .card-title{
-        @apply text-xl font-semibold;
+        @apply text-xl font-semibold sm:text-lg xs:text-base
     }
     .card-description{
-        @apply mt-2 text-xs;
+        @apply mt-2 text-xs sm:h-7 xs:text-xxs xs:h-2 xs:mt-1;
     }
     .card-price{
-        @apply mt-4 text-4xl font-semibold;
+        @apply mt-4 text-4xl font-semibold xs:text-3xl xs:mt-2;
     }
     .card-footer{
-        @apply mt-2 text-xs text-gray-400;
+        @apply mt-2 text-xs text-gray-400 xs:text-xxs;
     }
     .card-divider{
-        @apply mt-5 h-0.5 dark:opacity-50
+        @apply mt-5 h-0.5 dark:opacity-50 md:hidden xs:mt-4;
     }
     .card-popular{
-        @apply text-xs text-white p-2 py-1 bg-popular rounded-full;
+        @apply text-xs text-white p-2 py-1 bg-popular rounded-full xl:p-1 sm:text-xxs sm:p-0.5;
     }
 
     .card:hover{
-        @apply py-11.75 h-full rounded-3xl border-none border-border-gray bg-white transition-all duration-300 ease-in-out;
+        @apply py-11.75 h-full xs:h-32 rounded-3xl border-none border-border-gray bg-white transition-all duration-300 ease-in-out xs:py-3 xs:rounded-none;
     }
+
     .card:hover .card-title, .card:hover .card-description, .card:hover .card-price{
         @apply text-black font-bold transition-all duration-300 ease-in-out;
     }
+
     .card:hover .card-divider{
         @apply bg-neutral-400 dark:opacity-50 transition-all duration-300 ease-in-out;
+    }
+
+    .card:hover .card-description{
+        @apply xs:mt-1;
     }
 
 }

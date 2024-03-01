@@ -2,6 +2,14 @@
 module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
+    screens: {
+      '2xl':{'max': '1536px'},
+      'xl': {'max': '1280px'},
+      'lg': {'max': '1024px'},
+      'md': {'max': '800px'},
+      'sm': {'max': '640px'},
+      'xs': {'max': '500px'},
+    },
     extend: {
       spacing: {
         'icon': '14px',
@@ -24,7 +32,6 @@ module.exports = {
         '1': '1px',
       },
       colors: {
-        'body-dark': '#0E0E0E',
         'component-dark': '#161616',
         'secondary': '#E8E8E8',
         'form-dark': '#2F2F2F',
@@ -39,7 +46,8 @@ module.exports = {
       },
       fontSize: {
         'xxs': '.625rem',
-      }
+      },
+      
     },
   },
   plugins: [],
