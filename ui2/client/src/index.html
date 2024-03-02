@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./output.css">
+    <title>Document</title>
+</head>
+<body class="h-full w-full grid place-items-center bg-component-dark">
+
+    <main class="p-8 px-5 w-1/2 xl:w-2/3 lg:w-4/5 md:w-full h-144 bg-component-dark rounded-sm">
+
+        <div class="w-full h-28 flex justify-between 2xl:h-[120px] lg:h-28 sm:h-36">
+            <div class="text-white sm:max-w-62 xs:max-w-44">
+                <h1 class="text-3xl font-semibold sm:text-2xl xs:text-xl">AI chat made affordable</h1>
+                <p class="text-lg sm:text-base text-secondary mt-4 xs:text-sm">Pricing plans for every budget</p>
+            </div>
+            <div class="text-white w-1/3 p-4 lg:w-2/5 xs:w-4/5 bg-form-dark flex flex-col justify-between rounded-3xl h-full">
+                <p class="text-white text-lg 2xl:text-base font-normal leading-6 xs:text-sm">
+                    <span class="text-highlight-yellow underline">Get discount</span>
+                    for subscription to our news
+                </p>
+                <form onsubmit="formSubmit(event)" class="mt-2 flex">
+                    <input class="2xl:w-4/5 placeholder:text-xs text-xs w-42 py-1.5 bg-component-dark px-2 rounded-md" type="text" placeholder="Enter a city name" name="city" value="">
+                    <button class="ml-1 w-8 h-full  rounded-md grid place-content-center text-white bg-gradient-to-b from-gradient-1 to-gradient-2" type="submit">
+                        <svg fill="#fff" class="w-icon h-icon bg-transparen" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M64 112c-8.8 0-16 7.2-16 16v22.1L220.5 291.7c20.7 17 50.4 17 71.1 0L464 150.1V128c0-8.8-7.2-16-16-16H64zM48 212.2V384c0 8.8 7.2 16 16 16H448c8.8 0 16-7.2 16-16V212.2L322 328.8c-38.4 31.5-93.7 31.5-132 0L48 212.2zM0 128C0 92.7 28.7 64 64 64H448c35.3 0 64 28.7 64 64V384c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128z"/></svg>
+                    </button>
+                </form> 
+            </div>
+        </div>
+
+        <div class="mt-14 w-full h-90 grid place-items-center grid-cols-3 xs:grid-rows-3 xs:grid-flow-col xs:mt-6 xs:gap-8 xs:max-h-110">
+            <div class="card rounded-l-3xl sm:rounded-l-2xl xs:rounded-t-2xl xs:rounded-none">
+                <div class="card-inner">
+                    <span class="card-title">V/Max Diesel</span>
+                    <p class="card-description">Basic chat functionality</p>
+                    <span id="maxdiesel" class="card-price">$0</span>
+                    <span class="card-footer">Free</span>
+                </div>
+                <hr class="card-divider">
+            </div>
+            <div class="card">
+                <div class="card-inner">
+                    <span class="card-title">V/Pro Diesel</span>
+                    <p class="card-description">More advanced AI capabilities</p>
+                    <span id="prodiesel" class="card-price">$0</span>
+                    <span class="card-footer">Per month, per team member</span>
+                </div>
+                <hr class="card-divider">
+            </div>
+            <div class="card rounded-r-3xl sm:rounded-r-2xl xl:border-none xs:rounded-none xs:rounded-b-2xl">
+                <div class="card-inner">
+                    <div class="flex justify-between items-center">
+                        <span class="card-title">PO/gaz Otogaz</span>
+                        <span class="card-popular">Popular</span>
+                    </div>
+                    <p class="card-description">For large team and business</p>
+                    <span id="pogas" class="card-price">$0</span>
+                    <span class="card-footer">Per month, per team member</span>
+                </div>
+                <hr class="card-divider">
+            </div>
+
+        </div>
+
+    </main>
+    <script src="./app.js"></script>
+</body>
+</html>
