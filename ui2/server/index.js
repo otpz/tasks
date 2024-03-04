@@ -1,16 +1,14 @@
 const express = require('express')
 const cors = require('cors')
-const dotenv = require('dotenv').config()
-const cheerio = require('cheerio')
-const axios = require('axios')
 const searchController = require('./controller/controller')
-const app = express()
+const dotenv = require('dotenv').config()
 
+const app = express()
 
 app.use(
     cors({
         credentials: true,
-        origin: 'http://127.0.0.1:5500',
+        origin: process.env.CORS_ORIGIN_URL,
     })
 )
 

@@ -12,9 +12,11 @@ const formSubmit = (e) => {
     }
 }
 
+const BACKEND_URL = `http://localhost:3000`
+
 const fetchData = async (city) => {
     try {
-        const response = await fetch(`http://localhost:3000/${city}`, {method: 'GET'})
+        const response = await fetch(`${BACKEND_URL}/${city}`, {method: 'GET'})
         const data = await response.json()
 
         if (data.error) {
