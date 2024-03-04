@@ -1,8 +1,11 @@
 const express = require('express')
 const cors = require('cors')
+const dotenv = require('dotenv').config()
 const cheerio = require('cheerio')
 const axios = require('axios')
+const searchController = require('./controller/controller')
 const app = express()
+
 
 app.use(
     cors({
@@ -14,31 +17,9 @@ app.use(
 app.use(express.json())
 app.use(express.urlencoded({extended: false}))
 
-app.get('/:city', async (req, res) => {
-    const city = req.params // { city: 'usak' }
+app.get('/:city', searchController)
 
-    const cityUpperCase = city.city.toUpperCase() // USAK
-    const cityLowerCase = city.city.toLowerCase() // usak
-
-    const url = `https://www.petrolofisi.com.tr/akaryakit-fiyatlari/${cityLowerCase}-akaryakit-fiyatlari`
-
-    try {
-        const data = await axios.get(url) // html içeriğini cheerio ile işle
-        const $ = cheerio.load(data.data)
-
-        // ilgili verileri al
-        const VMaxDiesel = $(`[data-disctrict-name="${cityUpperCase}"] > td:nth-child(3) > span:nth-child(1)`).text()
-        const VProDiesel = $(`[data-disctrict-name="${cityUpperCase}"] > td:nth-child(4) > span:nth-child(1)`).text()
-        const POGas = $(`[data-disctrict-name="${cityUpperCase}"] > td:nth-child(5) > span:nth-child(1)`).text()
-
-        return res.json({VMaxDiesel, VProDiesel, POGas})
-    }
-    catch (error){
-        return error
-    }
-})
-
-const port = 5000
+const port = process.env.PORT
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`)
 })
