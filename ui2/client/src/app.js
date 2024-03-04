@@ -20,14 +20,26 @@ const fetchData = async (city) => {
         const data = await response.json()
 
         if (data.error) {
-            const main = document.querySelector('#main')
-            const error = document.querySelector('#error')
-            
-            main.classList.add('hidden')
 
-            error.classList.remove('hidden')
-            error.classList.add("grid")
-            error.classList.add("place-items-center")
+            const textInput = document.querySelector('#input-text')
+
+            textInput.value = ''
+
+            spanCity.forEach((el) => {
+                el.innerHTML = 'Şehir ismi hatalı!'
+            })
+
+
+            spanVmaxDiesel.innerHTML = "₺"
+            spanVproDiesel.innerHTML = "₺"
+            spanPoGas.innerHTML = "₺"
+            
+            toastr.options.timeOut = 2500;
+            toastr.options.positionClass = "toast-top-left";
+
+            toastr.error('Şehir ismini doğru girdiğinizden emin olunuz.' )
+
+            return "Şehir ismi hatalı!"
         }
 
         setValuesToDom(data, city)

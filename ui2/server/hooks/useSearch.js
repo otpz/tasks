@@ -4,11 +4,9 @@ const dotenv = require('dotenv').config()
 
 const useSearch = async (searchTerm) => { 
 
-    console.log("search:", searchTerm)
-
     const cityUpperCase = searchTerm.toUpperCase()
     const cityLowerCase = searchTerm.toLowerCase()
-    
+
     const url = process.env.FUEL_URL + `${cityLowerCase}-akaryakit-fiyatlari`
 
     try {

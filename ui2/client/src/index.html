@@ -21,7 +21,7 @@
                     merkez ilçesinin fiyatlarını görün
                 </p>
                 <form onsubmit="formSubmit(event)" class="mt-2 flex">
-                    <input class="2xl:w-4/5 w-4/5 placeholder:text-sm text-sm py-1.5 bg-component-dark px-2 rounded-md" type="text" placeholder="Şehir ismi giriniz" name="city" value="">
+                    <input id="input-text" required class="2xl:w-4/5 w-4/5 placeholder:text-sm text-sm py-1.5 bg-component-dark px-2 rounded-md" type="text" placeholder="Şehir ismi giriniz" name="city" value="">
                     <button class="ml-1 w-8 h-full  rounded-md grid place-content-center text-white bg-gradient-to-b from-gradient-1 to-gradient-2" type="submit">
                         <svg fill="#fff" class="w-icon h-icon bg-transparen" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg>
                     </button>
@@ -59,14 +59,13 @@
 
     </main>
 
-    <main id="error" class="w-1/2 h-144 hidden">
-        <h1 class="text-4xl font-semibold text-white">Şehir Bulunamadı</h1>
-
-        <button class="w-144 h-14 rounded-md text-white bg-gradient-to-b from-gradient-1 to-gradient-2">
-            <a class="w-144 h-14 grid place-content-center" href="http://127.0.0.1:5500/ui2/client/src/index.html">Geri Dön</a>
-        </button>
-    </main>
-
     <script src="./app.js"></script>
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.0.1/css/toastr.css" rel="stylesheet"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.0.1/js/toastr.js"></script>
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.0.1/css/toastr.css" rel="stylesheet"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.0.1/js/toastr.js"></script>
+    
 </body>
 </html>

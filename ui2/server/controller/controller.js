@@ -1,12 +1,9 @@
 const useSearch = require('../hooks/useSearch')
 
 const searchController = async (req, res) => {
-
     const {city} = req.params
-
     const data = await useSearch(city)
 
-    console.log(data)
     if (!data.error){
         return res.json(data)
     } else {
