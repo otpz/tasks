@@ -21,9 +21,7 @@ const fetchData = async (city) => {
 
         if (data.error) {
 
-            const textInput = document.querySelector('#input-text')
-
-            textInput.value = ''
+            // const textInput = document.querySelector('#input-text')
 
             spanCity.forEach((el) => {
                 el.innerHTML = 'Şehir ismi hatalı!'
@@ -38,7 +36,7 @@ const fetchData = async (city) => {
             toastr.options.positionClass = "toast-top-left";
 
             toastr.error('Şehir ismini doğru girdiğinizden emin olunuz.' )
-
+            // textInput.innerHTML = ''
             return "Şehir ismi hatalı!"
         }
 
