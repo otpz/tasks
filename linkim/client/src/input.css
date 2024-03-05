@@ -12,7 +12,7 @@
 @layer components {
 
     .main{
-        @apply bg-main h-148 w-240 rounded-md shadow-lg
+        @apply bg-main h-148 w-240 rounded-md shadow-lg lg:w-full
     }
 
     .button{

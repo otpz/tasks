@@ -559,6 +559,12 @@ html{
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
+@media (max-width: 1024px) {
+  .main {
+    width: 100%;
+  }
+}
+
 .button {
   height: 2.5rem;
   width: 7rem;
@@ -683,6 +689,10 @@ html{
   margin-top: 0.75rem;
 }
 
+.mt-4 {
+  margin-top: 1rem;
+}
+
 .mt-6 {
   margin-top: 1.5rem;
 }
@@ -731,6 +741,10 @@ html{
   width: 50%;
 }
 
+.w-100 {
+  width: 25rem;
+}
+
 .w-125 {
   width: 31.25rem;
 }
@@ -757,6 +771,10 @@ html{
 
 .max-w-75 {
   max-width: 18.75rem;
+}
+
+.cursor-pointer {
+  cursor: pointer;
 }
 
 .flex-row {
@@ -799,6 +817,42 @@ html{
   background-color: rgb(230 254 237 / var(--tw-bg-opacity));
 }
 
+.bg-\[url\(\'\/src\/assets\/img\/background\.jpg\'\)\] {
+  background-image: url('/src/assets/img/background.jpg');
+}
+
+.bg-\[url\(\'C\:\\Users\\Osman\\Documents\\Web\\tasks\\linkim\\client\\src\\assets\\img\\background\.jpg\'\)\] {
+  background-image: url('C:\Users\Osman\Documents\Web\tasks\linkim\client\src\assets\img\background.jpg');
+}
+
+.bg-\[url\(\'\/linkim\\client\\src\\assets\\img\\background\.jpg\'\)\] {
+  background-image: url('/linkim\client\src\assets\img\background.jpg');
+}
+
+.bg-\[url\(\'\/linkim\/client\/src\/assets\/img\/background\.jpg\'\)\] {
+  background-image: url('/linkim/client/src/assets/img/background.jpg');
+}
+
+.bg-\[url\(\'\/linkim\/client\/src\/assets\/img\/background2\.jpg\'\)\] {
+  background-image: url('/linkim/client/src/assets/img/background2.jpg');
+}
+
+.bg-\[url\(\'\/linkim\/client\/src\/assets\/img\/background2\.png\'\)\] {
+  background-image: url('/linkim/client/src/assets/img/background2.png');
+}
+
+.bg-cover {
+  background-size: cover;
+}
+
+.bg-contain {
+  background-size: contain;
+}
+
+.bg-no-repeat {
+  background-repeat: no-repeat;
+}
+
 .p-4 {
   padding: 1rem;
 }
@@ -819,6 +873,11 @@ html{
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
+}
+
+.text-5xl {
+  font-size: 3rem;
+  line-height: 1;
 }
 
 .text-7xl {
@@ -884,6 +943,11 @@ html{
 .text-green-800 {
   --tw-text-opacity: 1;
   color: rgb(22 101 52 / var(--tw-text-opacity));
+}
+
+.text-red-500 {
+  --tw-text-opacity: 1;
+  color: rgb(239 68 68 / var(--tw-text-opacity));
 }
 
 .underline {

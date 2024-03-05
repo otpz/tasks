@@ -10,7 +10,11 @@ module.exports = {
       'sm': {'max': '640px'},
       'xs': {'max': '500px'},
     },
+    
     extend: {
+      backgroundImage: {
+        'pattern': "url(/src/assets/img/background.jpg)",
+      },
       spacing: {
         '0.05': '0.2px', 
         'icon': '14px',
