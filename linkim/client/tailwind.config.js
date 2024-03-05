@@ -2,7 +2,45 @@
 module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
-    extend: {},
+    screens: {
+      '2xl':{'max': '1536px'},
+      'xl': {'max': '1280px'},
+      'lg': {'max': '1024px'},
+      'md': {'max': '800px'},
+      'sm': {'max': '640px'},
+      'xs': {'max': '500px'},
+    },
+    extend: {
+      spacing: {
+        'icon': '14px',
+        '11.75': '2.9375rem',
+        '41': '164px',
+        '42': '168px',
+        '62': '15.5rem',
+        '76': '19rem',
+        '84': '21rem',
+        '90': '22.5rem',
+        '100': '25rem',
+        '110': '27.5rem',
+        '125': '31.25rem',
+        '128': '32rem',
+        '144': '36rem',
+        '148': '37rem',
+        '160': '40rem',
+        '240': '60rem',
+      },
+      borderWidth: {
+        '0.5': '0.5px',
+        '1': '1px',
+      },
+      colors: {
+        'submit-button': '#263238',
+        
+      },
+      fontSize: {
+        'xxs': '.625rem',
+      },
+    },
   },
   plugins: [],
 }

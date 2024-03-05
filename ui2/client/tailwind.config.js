@@ -48,7 +48,6 @@ module.exports = {
       fontSize: {
         'xxs': '.625rem',
       },
-      
     },
   },
   plugins: [],
