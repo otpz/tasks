@@ -72,6 +72,17 @@
         @apply w-full h-12 flex items-center px-4 bg-purple-800 text-white rounded-md cursor-pointer;
     } 
     
+    .navbar{
+        @apply w-full h-12
+    }
+
+    .navbar .nav-list{
+        @apply w-full h-full flex items-center px-4 list-none;
+    }
+
+    .navbar .nav-list .list-item{ 
+        @apply h-full flex items-center px-4 cursor-pointer text-gray-600 text-base;
+    }
 
 }
 

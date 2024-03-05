@@ -725,6 +725,38 @@ html{
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.navbar {
+  height: 3rem;
+  width: 100%;
+}
+
+.navbar .nav-list {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  list-style-type: none;
+  align-items: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.navbar .nav-list .list-item {
+  display: flex;
+  height: 100%;
+  cursor: pointer;
+  align-items: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  --tw-text-opacity: 1;
+  color: rgb(75 85 99 / var(--tw-text-opacity));
+}
+
+.m-auto {
+  margin: auto;
+}
+
 .my-4 {
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -776,6 +808,10 @@ html{
 
 .flex {
   display: flex;
+}
+
+.list-item {
+  display: list-item;
 }
 
 .h-0 {
@@ -1011,6 +1047,11 @@ html{
 .text-brand-title {
   --tw-text-opacity: 1;
   color: rgb(117 245 126 / var(--tw-text-opacity));
+}
+
+.text-brand-title2 {
+  --tw-text-opacity: 1;
+  color: rgb(92 219 101 / var(--tw-text-opacity));
 }
 
 .text-gray-500 {

@@ -48,6 +48,7 @@ module.exports = {
         'body': '#D0E9D7',
         'main-img': '#E6FEED',
         'brand-title': '#75f57e',
+        'brand-title2': '#5cdb65',
 
       },
       fontSize: {
