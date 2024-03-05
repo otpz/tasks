@@ -12,11 +12,15 @@ module.exports = {
     },
     extend: {
       spacing: {
+        '0.05': '0.2px', 
         'icon': '14px',
         '11.75': '2.9375rem',
+        '25': '6.25rem',
         '41': '164px',
         '42': '168px',
         '62': '15.5rem',
+        '62.5': '15.625rem',
+        '75': '18.75rem',
         '76': '19rem',
         '84': '21rem',
         '90': '22.5rem',
@@ -35,7 +39,11 @@ module.exports = {
       },
       colors: {
         'submit-button': '#263238',
-        
+        'main': '#FAFFFB',
+        'body': '#D0E9D7',
+        'main-img': '#E6FEED',
+        'brand-title': '#75f57e',
+
       },
       fontSize: {
         'xxs': '.625rem',
