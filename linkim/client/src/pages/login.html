@@ -40,14 +40,14 @@
             <div class="w-full h-100 flex flex-col items-center">
                 <h1 class="text-2xl font-bold mb-4 text-green-800">Giriş Yap</h1>
 
-                <form class="form" action="">
+                <form onsubmit="login(event)" class="form" action="./profile.html" method="POST">
                     <div class="form-div">
                         <label class="form-label" for="email">Kullanıcı adı veya email</label>
-                        <input class="form-input" type="email" placeholder="otpz@gmail.com">
+                        <input class="form-input" type="email" placeholder="otpz@gmail.com" name="email">
                     </div>
                     <div class="form-div">
                         <label class="form-label" for="password">Şifre</label>
-                        <input class="form-input" type="password" placeholder="Şifrenizi giriniz">
+                        <input class="form-input" type="password" placeholder="Şifrenizi giriniz" name="password">
                     </div>
                     <div class="form-div form-forget">
                         <a class="" href="./forgot.html">Şifreni mi unuttun?</a>
@@ -74,5 +74,6 @@
             </div>
         </div>
     </main>
+    <script src="../js/app.js"></script>
 </body>
 </html>
