@@ -878,6 +878,10 @@ html{
   width: 40rem;
 }
 
+.w-2\/5 {
+  width: 40%;
+}
+
 .w-3\/5 {
   width: 60%;
 }
@@ -920,6 +924,10 @@ html{
 
 .justify-center {
   justify-content: center;
+}
+
+.justify-between {
+  justify-content: space-between;
 }
 
 .justify-evenly {

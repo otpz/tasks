@@ -33,12 +33,25 @@
             </div>
         </div>
         <div class="w-1/2 h-full flex flex-col justify-center items-center">
-            <div class="w-full h-100 flex flex-col items-center">
+            <div class="w-full flex flex-col items-center">
                 <h1 class="text-2xl font-bold mb-4 text-green-800">Kayıt Ol</h1>
-
                 <form class="form" action="">
+                    <div class="flex items-center justify-between w-3/5">
+                        <div class="form-div w-2/5">
+                            <label class="form-label" for="name">İsim</label>
+                            <input class="form-input" name="name" type="text" placeholder="Osman">
+                        </div>
+                        <div class="form-div w-2/5">
+                            <label class="form-label" for="surname">Soyisim</label>
+                            <input class="form-input" name="surname" type="text" placeholder="Topuz">
+                        </div>
+                    </div>
                     <div class="form-div">
-                        <label class="form-label" for="email">Kullanıcı adı veya email</label>
+                        <label class="form-label" for="username">Kullanıcı Adı</label>
+                        <input class="form-input" name="username" type="text" placeholder="otpz@gmail.com">
+                    </div>
+                    <div class="form-div">
+                        <label class="form-label" for="email">Email</label>
                         <input class="form-input" type="email" placeholder="otpz@gmail.com">
                     </div>
                     <div class="form-div">
