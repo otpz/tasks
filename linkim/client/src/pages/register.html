@@ -35,7 +35,7 @@
         <div class="w-1/2 h-full flex flex-col justify-center items-center">
             <div class="w-full flex flex-col items-center">
                 <h1 class="text-2xl font-bold mb-4 text-green-800">Kayıt Ol</h1>
-                <form class="form" action="">
+                <form onsubmit="register(event)" class="form" action="" method="POST">
                     <div class="flex items-center justify-between w-3/5">
                         <div class="form-div w-2/5">
                             <label class="form-label" for="name">İsim</label>
@@ -52,11 +52,11 @@
                     </div>
                     <div class="form-div">
                         <label class="form-label" for="email">Email</label>
-                        <input class="form-input" type="email" placeholder="otpz@gmail.com">
+                        <input class="form-input" type="email" placeholder="otpz@gmail.com" name="email">
                     </div>
                     <div class="form-div">
                         <label class="form-label" for="password">Şifre</label>
-                        <input class="form-input" type="password" placeholder="Şifrenizi en az 6 haneli giriniz.">
+                        <input class="form-input" type="password" placeholder="Şifrenizi en az 6 haneli giriniz." name="password">
                     </div>
                     <button class="form-button mt-8" type="submit">Kayıt Ol</button>
                 </form>
@@ -81,5 +81,6 @@
         </div>
     </main>
     
+    <script src="../js/app.js"></script>
 </body>
 </html>
